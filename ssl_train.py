@@ -1,5 +1,5 @@
 """
-SSL Training Script - Minimal version, cleaned up from original
+SSL Training Script
 """
 
 import os
