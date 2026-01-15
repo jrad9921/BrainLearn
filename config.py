@@ -13,7 +13,7 @@ BATCH_SIZE = 50
 LEARNING_RATE = 1e-1
 NUM_WORKERS = 8
 MODEL_TYPE = 'sfcne'
-MODEL_NAME = f'final_model_b{BATCH_SIZE}_e{MAX_EPOCHS}.pt'
+MODEL_NAME = f'your_model_name'
 
 # Loss Parameters
 CONTRASTIVE_TEMPERATURE = 0.05
@@ -24,8 +24,8 @@ SCHEDULER_FACTOR = 0.5
 SCHEDULER_PATIENCE = 5
 
 # Data
-COHORT_SSL = 'multi-dis'
-COHORT_EXTRACT = 'id1000'
+COHORT_SSL = 'your-cohort'
+COHORT_EXTRACT = 'your-cohort'
 IMG_SIZE = 96
 
 # ============================================
@@ -33,7 +33,7 @@ IMG_SIZE = 96
 # ============================================
 
 # Choose reduction method: 'umap', 'tsne', or 'pca'
-REDUCTION_METHOD = 'tsne'  # Options: 'umap', 'tsne', 'pca'
+REDUCTION_METHOD = 'umap'  # Options: 'umap', 'tsne', 'pca'
 # UMAP-specific parameters
 N_NEIGHBORS = 10        # Number of neighbors (UMAP only)
 MIN_DIST = 1.0         # Minimum distance (UMAP only)
@@ -47,13 +47,13 @@ RANDOM_STATE = 3       # Random seed for reproducibility
 # ============================================
 
 # File Paths (CHANGE THESE TO YOUR PATHS)
-JSON_PATH = f'../data/ssl_data/ssl-{COHORT_SSL}.json'
-LOG_DIR = f"../logs/ssl/{MODEL_TYPE}/{COHORT_SSL}/{COHORT_SSL}{IMG_SIZE}/"
-MODEL_DIR = f"../models/ssl/{MODEL_TYPE}/{COHORT_SSL}/{COHORT_SSL}{IMG_SIZE}/"
-IMAGES_EXT_DIR = f'../images/{COHORT_EXTRACT}/npy96/'
-FEATURES_EXT_DIR = f"../features/{COHORT_EXTRACT}/{MODEL_TYPE}/"
-VIZ_DIR = f"../representations/{COHORT_EXTRACT}/{MODEL_TYPE}/ssl-{COHORT_SSL}/{MODEL_NAME}/{REDUCTION_METHOD}/"
-DATA_PATH = f'../data/{COHORT_EXTRACT}/demographics.csv'
+JSON_PATH = '/path/to/your/file'
+LOG_DIR = '/path/to/your/folder'
+MODEL_DIR = '/path/to/your/folder'
+IMAGES_EXT_DIR = '/path/to/your/folder'
+FEATURES_EXT_DIR = '/path/to/your/folder'
+VIZ_DIR = '/path/to/your/folder'
+DATA_PATH = f'/path/to/your/file'
 
 
 # ============================================
